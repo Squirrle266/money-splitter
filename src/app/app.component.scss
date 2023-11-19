@@ -1,0 +1,74 @@
+h1 {
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 40px;
+  background-color: #e6e6e6;
+}
+
+.mainDiv {
+  margin: 20px;
+}
+
+.input-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-section {
+  flex: 1;
+  padding-bottom: 40px;
+}
+
+.lblBetrag {
+  padding-right: 5px;
+  font-size: 15px;
+}
+
+.btnBetrag {
+  margin-left: 5px;
+}
+
+.table-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-section {
+  flex: 1;
+}
+
+.table-section-1 {
+  margin-right: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.border-top,
+.border-bottom {
+  position: fixed;
+  width: 100%;
+  height: 5px; 
+  background-color: #595959; 
+}
+
+.border-top {
+  top: 0;
+}
+
+.border-bottom {
+  bottom: 0;
+}

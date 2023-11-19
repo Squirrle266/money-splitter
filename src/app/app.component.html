@@ -1,0 +1,60 @@
+<!-- Titel -->
+<h1>Banknoten-Rechner</h1>
+<div class="mainDiv">
+  <div class="input-section">
+    <!-- Betrag + Berechnen Button -->
+    <div class="left-section">
+      <label for="amount" class="lblBetrag">Betrag:</label>
+      <input type="number" (input)="validateInputDecimal($event)" (keydown)="validateInputAllowedCharacters($event)" (keyup.enter)="calculate()" [(ngModel)]="inputAmount" />
+      <button (click)="calculate()" class="btnBetrag">Berechnen</button>
+    </div>
+
+    <!-- Slider -->
+    <mat-slide-toggle [(ngModel)]="isBackendCalculation">Berechnung im Backend</mat-slide-toggle>
+  </div>
+
+  <!-- Tabellen -->
+  <div *ngIf="result.length > 0 || difference.length > 0">
+    <div class="table-container">
+      <!-- Stückelung Tabelle -->
+      <div *ngIf="result.length > 0" class="table-section table-section-1">
+        <p>Stückelung für Betrag: {{ replaceDots(calculatedAmount) }}€</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Schein/Münze</th>
+              <th>Anzahl</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of result">
+              <td>{{ item.banknotesAndCoins | number: '1.2-2' }}€</td>
+              <td>{{ item.count }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Differenz Tabelle -->
+      <div *ngIf="difference.length > 0" class="table-section">
+        <p>Differenz zu vorherigem Betrag: {{ replaceDots(previousAmount) }}€</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Schein/Münze</th>
+              <th>Differenz</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of difference">
+              <td>{{ item.banknotesAndCoins | number: '1.2-2' }}€</td>
+              <td>{{ item.countDiff > 0 ? '+' + item.countDiff : item.countDiff }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="border-top"></div>
+<div class="border-bottom"></div>

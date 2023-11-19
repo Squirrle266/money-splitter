@@ -1,0 +1,68 @@
+{
+  "hash": "ce94578f",
+  "browserHash": "d31e1592",
+  "optimized": {
+    "@angular/common": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "d1e09bdd",
+      "needsInterop": false
+    },
+    "@angular/common/http": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "5965ab32",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "deac9780",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "dd30dbb5",
+      "needsInterop": false
+    },
+    "@angular/material/slide-toggle": {
+      "src": "../../../../../node_modules/@angular/material/fesm2022/slide-toggle.mjs",
+      "file": "@angular_material_slide-toggle.js",
+      "fileHash": "1ff206bd",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "5cce891c",
+      "needsInterop": false
+    },
+    "@angular/common/locales/de": {
+      "src": "../../../../../node_modules/@angular/common/locales/de.mjs",
+      "file": "@angular_common_locales_de.js",
+      "fileHash": "004915fb",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-JBCTP2Q3": {
+      "file": "chunk-JBCTP2Q3.js"
+    },
+    "chunk-P6DC7G2I": {
+      "file": "chunk-P6DC7G2I.js"
+    },
+    "chunk-DUPVKDZK": {
+      "file": "chunk-DUPVKDZK.js"
+    },
+    "chunk-TJFW7V2M": {
+      "file": "chunk-TJFW7V2M.js"
+    },
+    "chunk-WXG6MJ4R": {
+      "file": "chunk-WXG6MJ4R.js"
+    },
+    "chunk-HSNDBVJ3": {
+      "file": "chunk-HSNDBVJ3.js"
+    }
+  }
+}
