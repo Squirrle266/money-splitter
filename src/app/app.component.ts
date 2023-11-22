@@ -52,16 +52,15 @@ export class AppComponent {
   // Erlaubt max. 2 Dezimalstellen
   validateInputDecimal(event: Event) {
     const inputElement = event.target as HTMLInputElement;
-    const currentValue = inputElement.value.replace(".", ",");
 
-    if (currentValue.includes(",")) {
-      const decimalPart = currentValue.split(",")[1];
+    if (inputElement.value.includes(".")) {
+      const decimalPart = inputElement.value.split(".")[1];
       if (decimalPart.length > 2) {
-        inputElement.value = currentValue.substring(0, currentValue.length - 1);
+        inputElement.value = inputElement.value.substring(0, inputElement.value.length - 1);
         this.inputAmount = parseFloat(inputElement.value);
       }
     } 
-    if (currentValue.includes("-")) {
+    if (inputElement.value.includes("-")) {
       inputElement.value = '0'
       this.inputAmount = parseFloat(inputElement.value);
     }
